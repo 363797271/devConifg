@@ -1,10 +1,11 @@
 # vscode插件
+
 - vsCode插件
 - Auto Close Tag 标签自动闭合
 - Auto Rename Tag 标签同步改动
 - chinese Language Packa for Visual Studio Code vsCode汉化包
 - color Highlight 颜色值高亮
-- Eslint 原生 js 
+- ESlint js检查工具
 - HTML CSS Support css提示
 - markdown all in one markdown快捷键
 - markdownlint markdown语法纠错
