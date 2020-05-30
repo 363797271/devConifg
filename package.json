@@ -9,7 +9,7 @@
   "scripts": {
     "serve": "gitbook serve ./src ./docs",
     "build": "gitbook build ./src ./docs",
-    "gitinstall": "gitbook install",
+    "gitinstall": "gitbook install ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

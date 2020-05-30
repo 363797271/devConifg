@@ -17,6 +17,10 @@
     
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -236,6 +240,7 @@
                                 <h1 id="&#x4ECB;&#x7ECD;">&#x4ECB;&#x7ECD;</h1>
 <p>&#x672C;&#x5E93;&#x5B58;&#x653E;&#x79C1;&#x4EBA;&#x8D44;&#x6599;&#x7BA1;&#x7406;</p>
 <h2 id="gitbook&#x4F7F;&#x7528;">gitbook&#x4F7F;&#x7528;</h2>
+<p><a href="http://gitbook.hushuang.me/setup.html" target="_blank">&#x6559;&#x7A0B;&#x6587;&#x6863;</a></p>
 <h3 id="&#x5B89;&#x88C5;gitbook">&#x5B89;&#x88C5;gitbook</h3>
 <pre><code class="lang-bash">npm install -g gitbook-cli
 </code></pre>
@@ -250,13 +255,13 @@
 </ul>
 <h3 id="&#x8FD0;&#x884C;&#x4E0E;&#x6253;&#x5305;">&#x8FD0;&#x884C;&#x4E0E;&#x6253;&#x5305;</h3>
 <p>&#x6D4F;&#x89C8;&#x5668;&#x8FD0;&#x884C;</p>
-<pre><code class="lang-bash">gitbook serve
+<pre><code class="lang-bash">gitbook serve [book] [output]
 </code></pre>
 <p>&#x751F;&#x6210;html&#xFF08;gitbook serve&#x5DF2;&#x751F;&#x6210;&#xFF09;</p>
-<pre><code class="lang-bash">gitbook build
+<pre><code class="lang-bash">gitbook build [book] [output]
 </code></pre>
 <h3 id="&#x5B89;&#x88C5;&#x63D2;&#x4EF6;">&#x5B89;&#x88C5;&#x63D2;&#x4EF6;</h3>
-<p>&#x5728;book.json&#x4E2D;&#x914D;&#x7F6E;&#x63D2;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;<code>gitbook install</code>&#x5B89;&#x88C5;</p>
+<p>&#x5728;book.json&#x4E2D;&#x914D;&#x7F6E;&#x63D2;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;<code>gitbook install [book]</code>&#x5B89;&#x88C5;</p>
 <h2 id="gitbook&#x63D2;&#x4EF6;">gitbook&#x63D2;&#x4EF6;</h2>
 <h3 id="&#x5BFC;&#x822A;&#x6298;&#x53E0;">&#x5BFC;&#x822A;&#x6298;&#x53E0;</h3>
 <pre><code class="lang-json">{
@@ -300,7 +305,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"介绍","level":"1.1","depth":1,"next":{"title":"自我管理","level":"1.2","depth":1,"ref":"","articles":[{"title":"vscode配置","level":"1.2.1","depth":2,"path":"docs/selfManagement/vscode配置.md","ref":"./docs/selfManagement/vscode配置.md","articles":[]},{"title":"npm包记录","level":"1.2.2","depth":2,"path":"docs/selfManagement/npm包列表.md","ref":"./docs/selfManagement/npm包列表.md","articles":[]},{"title":"统计监控调试_测试","level":"1.2.3","depth":2,"path":"docs/selfManagement/统计_监控_调试_测试.md","ref":"./docs/selfManagement/统计_监控_调试_测试.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-05-30T06:10:33.862Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-30T06:11:21.893Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"介绍","level":"1.1","depth":1,"next":{"title":"自我管理","level":"1.2","depth":1,"ref":"","articles":[{"title":"vscode配置","level":"1.2.1","depth":2,"path":"docs/selfManagement/vscode配置.md","ref":"./docs/selfManagement/vscode配置.md","articles":[]},{"title":"npm包记录","level":"1.2.2","depth":2,"path":"docs/selfManagement/npm包列表.md","ref":"./docs/selfManagement/npm包列表.md","articles":[]},{"title":"统计监控调试_测试","level":"1.2.3","depth":2,"path":"docs/selfManagement/统计_监控_调试_测试.md","ref":"./docs/selfManagement/统计_监控_调试_测试.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["expandable-chapters","livereload"],"pluginsConfig":{"expandable-chapters":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2020-05-30T06:19:02.143Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-30T06:14:21.189Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -308,6 +313,14 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
     
         
         <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>

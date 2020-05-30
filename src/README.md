@@ -4,6 +4,8 @@
 
 ## gitbook使用
 
+[教程文档](http://gitbook.hushuang.me/setup.html)
+
 ### 安装gitbook
 
 ```bash
@@ -27,18 +29,18 @@ gitbook init
 浏览器运行
 
 ```bash
-gitbook serve
+gitbook serve [book] [output]
 ```
 
 生成html（gitbook serve已生成）
 
 ```bash
-gitbook build
+gitbook build [book] [output]
 ```
 
 ### 安装插件
 
-在book.json中配置插件，使用`gitbook install`安装
+在book.json中配置插件，使用`gitbook install [book]`安装
 
 ## gitbook插件
 
