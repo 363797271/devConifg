@@ -1,6 +1,5 @@
 # vscode插件
 
-- vsCode插件
 - Auto Close Tag 标签自动闭合
 - Auto Rename Tag 标签同步改动
 - chinese Language Packa for Visual Studio Code vsCode汉化包
