@@ -8,5 +8,7 @@
 * 学习之路
   * [待学知识](./docs/learn/待学知识.md)
 * 性能优化
-  * [vue优化](./docs/performance/vue.md)
-    * [数据双向绑定优化](./docs/performance/vue.md)
+  * [vue 优化](./docs/performance/vue.md)
+  * [html & css 优化](./docs/performance/html_css.md)
+    * [html](./docs/performance/html_css.md#html)
+    * [css](./docs/performance/html_css.md#css)
