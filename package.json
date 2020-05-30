@@ -9,6 +9,7 @@
   "scripts": {
     "serve": "gitbook serve ./docs",
     "build": "gitbook build ./docs",
+    "gitinstall": "gitbook install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/363797271/self_management/issues"
   },
-  "homepage": "https://github.com/363797271/self_management#readme"
+  "homepage": "https://github.com/363797271/self_management#readme",
+  "dependencies": {
+    "gitbook-plugin-expandable-chapters": "^0.2.0"
+  }
 }
