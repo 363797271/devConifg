@@ -19,3 +19,5 @@
 - vuehelper VUE语法提示
 - Bracket Pair Colorizer 优化括号颜色
 - open in browser 可以右键在浏览器打开文件
+- open in browser 可以右键在浏览器打开文件
+- JavaScript standardjs styled snippets vscode代码的standardjs风格的js代码段
