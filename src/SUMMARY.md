@@ -12,3 +12,5 @@
   * [html & css 优化](./docs/performance/html_css.md)
     * [html](./docs/performance/html_css.md#html)
     * [css](./docs/performance/html_css.md#css)
+* 名词碎片
+  * [洋葱圈模型](./docs/word/ycq.md)

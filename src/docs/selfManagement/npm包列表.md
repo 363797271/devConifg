@@ -26,6 +26,7 @@
 - jszip 使用js创建、读取、编辑`.zip`文件的库
 - file-saver 客户端文件保存
 - xlsx excel读取解析处理导出工具
+- ip ip地址使用工具
 
 ## 通讯socket类
 
