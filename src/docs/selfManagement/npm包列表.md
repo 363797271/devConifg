@@ -28,6 +28,11 @@
 - xlsx excel读取解析处理导出工具
 - ip ip地址使用工具
 
+## 编译优化
+
+- HappyPack 并行（多线程）编译
+- 配置DllPlugin提高webpack的打包速度
+
 ## 通讯socket类
 
 - socket.io-client

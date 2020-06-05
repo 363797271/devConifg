@@ -1,4 +1,4 @@
-# vue性能优化
+# vue 性能优化
 
 ## 非双向绑定的数据
 
@@ -35,6 +35,7 @@ vue会对data对象中的数据添加getter setter监听。
 5. 不能修改已有属性的值
 6. 不能修改已有属性的描述符（可枚举型、可配置性、可写性、值）
 7. 不能修改该对象的原型
+8. 浅冻结，obj下属性如果指向一个对象，那这个对象不会被冻结
 
 ```js
 new Vue({
@@ -122,3 +123,86 @@ data数据层级一般保持2-3层最好。嵌套过深可能会导致：
   height: 60px
 }
 ```
+
+## 自定义指令 v-\<direct name\>
+
+使用元素或组件时有时需要定义一套通用的逻辑，例如表单的属性设置
+
+使用自定义指令，可以很方便的实现
+
+```js
+// 注册一个全局自定义指令 `v-form`
+Vue.directive('form', {
+  /**
+   * 钩子函数：指令第一次绑定到元素时调用
+   * 钩子函数参数：
+   * el: 指令绑定的元素，可用来操作DOM
+   * binding：包含指令信息的对象
+   * vnode：vue编译生成的虚拟节点
+   * oldVnode：上一次编译生成的虚拟节点
+   */
+  bind: function (el, binding) {
+    // v-form:arg="value"
+    // binding.arg 传给指令的参数
+    el.setAttribute(binding.arg, binding.value)
+  }
+})
+```
+
+```html
+<template>
+  <form>
+    <input v-form:type="'file'" />
+    <button v-form:disabled="true">按钮</button>
+  </form>
+</template>
+```
+
+注册局部指令可以在组件中使用`directives`
+
+```js
+export default {
+  directives: {
+    form: {
+      //...
+    }
+  }
+}
+```
+
+## 开发插件
+
+将指令作为插件使用，可以避免频繁的调用`Vue.directive()`方法
+
+开发插件，只需要暴露一个`install`方法，然后使用`Vue.use()`去使用即可。
+
+例如将上面的指令开发为插件：
+
+```js
+// ./assets/plugin/direct/form.js
+const FormPlugin = {
+  /**
+   * Vue vue构造器
+   * options 插件配置
+   */
+  install (Vue) {
+    Vue.directive('form', {
+      bind: function (el, binding) {
+        el.setAttribute(binding.arg, binding.value)
+      }
+    })
+  }
+}
+module.exports = FormPlugin
+```
+
+```js
+// main.js
+import FormPlugin from './assets/plugin/direct/form.js'
+Vue.use(FormPlugin)
+
+new Vue({
+  render: h => h(App)
+}).$mount('#app')
+```
+
