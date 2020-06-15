@@ -5,6 +5,11 @@
 - nodemon 自动重启工具
 - cross-env 跨平台设置和使用环境变量
 
+## 启动服务
+
+- serve
+- browser-sync
+
 ## 工具类
 
 - Normalize.css CSS reset的替代方案
@@ -27,6 +32,7 @@
 - file-saver 客户端文件保存
 - xlsx excel读取解析处理导出工具
 - ip ip地址使用工具
+- web-downloadfile 纯前端下载文件
 
 ## 编译优化
 
