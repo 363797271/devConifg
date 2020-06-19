@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <style>
+      .wp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td class="wp">
+          <div class="box">123123</div>
+        </td>
+      </tr>
+    </table>
+    <div class="description">
+      <h4>介绍</h4>
+      <ul>
+        <li>flex布局轻松实现水平垂直居中</li>
+        <li>justify-content设置水平(横轴)方向居中</li>
+        <li>align-items设置垂直(纵轴)方向居中</li>
+      </ul>
+      <h4>缺点</h4>
+      <ol>
+        <li>依赖flex兼容性，移动端基本兼容，PC端看业务场景</li>
+      </ol>
+    </div>
+  </body>
+</html>

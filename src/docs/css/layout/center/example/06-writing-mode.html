@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>writing-mode</title>
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <style>
+      .wp {
+        writing-mode: vertical-lr;
+        text-align: center;
+      }
+      .wp-inner {
+        display: inline-block;
+        writing-mode: horizontal-tb;
+        width: 100%;
+      }
+      .box {
+        display: inline-block;
+        text-align: left;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wp">
+      <div class="wp-inner">
+        <div class="box">123123</div>
+      </div>
+    </div>
+    <div class="description">
+      <h4>介绍</h4>
+      <ul>
+        <li>
+          writing-mode可以改变文字的显示方向，比如可以通过writing-mode让文字的显示变为垂直方向
+        </li>
+        <li>更重要的是它还会改变所有水平方向上的css属性</li>
+        <li>
+          比如text-align，通过writing-mode和text-align就可以做到水平和垂直方向的居中了
+        </li>
+      </ul>
+      <h4>实现</h4>
+      <ol>
+        <li>父容器设置为垂直方向显示，并这是文本居中text-align</li>
+        <li>
+          增加一个中间容器，设置水平方向显示(恢复为正确的方向)，并设置宽度为100%，以便让子元素居中
+        </li>
+        <li>
+          子元素现在相对于父元素垂直居中了，可以通过margin或行居中的方式实现水平居中
+        </li>
+      </ol>
+      <h4>缺点</h4>
+      <ol>
+        <li>需要增加一个容器做转换</li>
+        <li>理解复杂</li>
+        <li>实现麻烦</li>
+      </ol>
+    </div>
+  </body>
+</html>

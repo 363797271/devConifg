@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lineheight</title>
+    <link href="main.css" type="text/css" rel="stylesheet" />
+    <style>
+      .wp {
+        text-align: center;
+        line-height: 300px;
+      }
+      .box {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: initial;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wp">
+      <div class="box">123123</div>
+    </div>
+    <div class="description">
+      <h4>介绍</h4>
+      <ol>
+        <li>将子元素设置为行内块元素</li>
+        <li>设置父元素的text-align，使行内块子元素水平居中</li>
+        <li>
+          设置父元素的line-height和子元素的(line-height:initial;vertical-align:
+          middle;)实现垂直居中
+        </li>
+        <li>
+          此时子元素的水平居中样式继承父元素，还要重置一下(text-align:left)
+        </li>
+      </ol>
+      <h4>优点</h4>
+      <ul>
+        <li>不需要知道子元素的宽高，也不需要固定宽高</li>
+      </ul>
+      <h4>缺点</h4>
+      <ol>
+        <li>宽度最大为容器宽度，高度超出容器，垂直方向置顶</li>
+        <li>需要父子都设置line-height</li>
+        <li>需要修改子元素的display</li>
+        <li>需要重置子元素的水平样式</li>
+      </ol>
+    </div>
+  </body>
+</html>
