@@ -22,5 +22,5 @@
 * 工具
   * ESLint 可组装的JavaScript和JSX检查工具
 * CSS
-  * 布局
+  * Layout 布局
     * [垂直居中布局](./docs/css/layout/center/index.html)
